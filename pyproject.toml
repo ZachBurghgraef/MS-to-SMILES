@@ -1,0 +1,25 @@
+[project]
+name = "ms-to-smiles"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Zachary Burghgraef", email = "burghgraefzachary@gmail.com" }
+]
+requires-python = ">=3.13.13"
+dependencies = [
+    "halo>=0.0.31",
+    "kagglehub>=1.0.2",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+    "torch>=2.14.0",
+    "tqdm>=4.70.1",
+]
+
+[project.scripts]
+ms-to-smiles = "ms_to_smiles:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
